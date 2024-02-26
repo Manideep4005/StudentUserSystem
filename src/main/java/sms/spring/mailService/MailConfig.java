@@ -25,8 +25,8 @@ public class MailConfig {
 		properties.put("mail.smtp.port", "587");
 		properties.put("mail.smtp.host", "smtp.gmail.com");
 
-		final String mailUserName = "systems2hms";
-		final String mailPassword = "raci ycsi wean vezu";
+		final String mailUserName = "Mail Username";
+		final String mailPassword = "Mail Password";
 
 		Session session = Session.getInstance(properties, new Authenticator() {
 
@@ -39,7 +39,7 @@ public class MailConfig {
 		try {
 			Message message = new MimeMessage(session);
 			message.setRecipient(Message.RecipientType.TO, new InternetAddress(to));
-			message.setFrom(new InternetAddress("systems2hms@gmail.com", "no-replay@Student Management System."));
+			message.setFrom(new InternetAddress("Sender", "no-replay@Student Management System."));
 			message.setSubject(userName + " thank you for registering at Student Management System");
 			message.setContent("<!DOCTYPE html>\r\n"
 					+ "<html lang=\"en\">\r\n"
@@ -152,7 +152,7 @@ public class MailConfig {
 		try {
 			Message message = new MimeMessage(session);
 			message.setRecipient(Message.RecipientType.TO, new InternetAddress(to));
-			message.setFrom(new InternetAddress("systems2hms@gmail.com", "no-replay@Student Management System."));
+			message.setFrom(new InternetAddress("Sender", "no-replay@Student Management System."));
 			message.setSubject("requested for password reset");
 			message.setContent("<!DOCTYPE html>\r\n"
 					+ "<html lang=\"en\">\r\n"
