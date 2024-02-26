@@ -8,8 +8,8 @@ public class MailCheck {
 		MailConfig sendMail = new MailConfig();
 		
 		
-		String to = "manideepnakka099@gmail.com";
-		String from = "systems2hms@gmail.com";
+		String to = "to";
+		String from = "from";
 		String subject = "This testing mail for Student Management System"
 				+ "";
 		
